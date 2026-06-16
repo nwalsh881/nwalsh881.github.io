@@ -1,353 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User Portfolio</title>
-    <!---custom css link--->
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
-
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Data Science & AI</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Lato:wght@300&family=Poppins&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!---header--->
-    <header>
-        <h2 class="logo">Portfo<span>lio</span></h2>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievement">Achievements</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
 
-    <!---home--->
-    <section class="home" id="home">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="img/video4.mp4" type="video/mp4">
-        </video>
-        <div class="home-text">
-            <h4>Hello</h4>
-            <h1>I'm Geek <br> <span>101</span></h1>
-            <h3>Software Developer and Programming Enthusiast </h3>
-            <a href="https://www.geeksforgeeks.org/" class="btn" target="_blank">Download Resume</a>
+  <nav>
+    <span class="nav-logo">nwalsh<span class="accent">881</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#more">more</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Data Science · AI · Statistics · Real Estate</p>
+          <h1 class="hero-headline">
+            I work with data to<br>
+            <span class="typing-wrap"><span id="typing"></span><span class="cursor">|</span></span>
+          </h1>
+          <p class="hero-sub">Student at Purdue University, building models, running analyses, and finding patterns that matter.</p>
+          <div class="hero-actions">
+            <a href="resume.pdf" class="btn btn-primary" target="_blank">Download resume</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
         </div>
+        <div class="hero-photo">
+          <img src="img/headshot_smiling.jpg" alt="Profile photo">
+        </div>
+      </div>
     </section>
 
-    <!---about--->
-     <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/profile.jpg">
+    <!-- About -->
+    <section class="section" id="about">
+      <span class="section-label">About</span>
+      <div class="about-grid">
+        <div class="about-body">
+          <h2>Hi, I'm [Your Name]</h2>
+          <p>I'm studying data science, AI, and statistics at Purdue University with a minor in real estate. I'm drawn to problems where data can illuminate things that intuition misses — whether that's predicting housing markets, understanding model behavior, or building cleaner pipelines.</p>
+          <p style="margin-top:0.75rem;">Outside of coursework I'm usually building side projects, reading about statistical inference, or thinking about how data applies to real estate markets.</p>
+          <div class="pill-row">
+            <span class="pill">Machine learning</span>
+            <span class="pill">Statistical inference</span>
+            <span class="pill">Real estate analytics</span>
+            <span class="pill">Data visualization</span>
+          </div>
         </div>
-
-        <div class="about-text">
-            <h2>About Me</h2>
-            <h4>Hi, My name is Geek101 !!</h4>
-            <p>I am a B.Tech Final Year Student of XYZ College, Pursuing My Degree in XYZ . I have a keen Interest in Problems Solving and Finding new and Dynamic Ideas.</p><br>
-            <p>I am a Machine Learning Enthusiast & Front-end Web Developer. I can provide clean code and pixel perfect design.</p>
-            <div class="about-gri">
-                <div class="about-in">
-                    <h5>1. Problem Solving</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>2. DSA</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>3. Machine Learning</h5>
-                </div>
-
-                <div class="about-in">
-                    <h5>4. Web Development</h5>
-                </div>
-
-            </div>
-            <a href="#contact" class="btn">Contact Me</a>
+        <div class="about-campus">
+          <img src="img/purdue_cover.jpg" alt="Purdue University campus">
+          <p class="img-caption">Purdue University — West Lafayette, IN</p>
         </div>
+      </div>
     </section>
 
-    <!-- Technical Languages -->
-    <div class="inner">
-        <div class="Tech_header">
-            <h1>Languages</h1>
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <span class="section-label">Skills</span>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <p class="skill-heading">Languages</p>
+          <p class="skill-items">Python · R · SQL</p>
         </div>
-        <div class="Tcontainer">
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/C.png" alt="C Programming Language">
-                    </div>
-                    <h3>C</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/C++.png" alt="C++ Programming Language">
-                    </div>
-                    <h3>C++</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/html.png" alt="Html">
-                    </div>
-                    <h3>HTML</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/css.png" alt="Css">
-                    </div>
-                    <h3>Css</h3>
-                </div>
-            </div>
-        <div class="skill-box">
-            <div class="skill-title">
-                  <div class="tech_img">
-                    <img class="skill-icon" src="img/js.png" alt="JavaScript">
-                  </div>
-                  <h3>JavaScript</h3>
-                </div>
-            </div>
-            <div class="skill-box">
-                <div class="skill-title">
-                    <div class="tech_img">
-                        <img class="skill-icon" src="img/python.png" alt="Python">
-                    </div>
-                    <h3>Python</h3>
-                </div>
-            </div>
+        <div class="skill-group">
+          <p class="skill-heading">ML & AI</p>
+          <p class="skill-items">scikit-learn · PyTorch · XGBoost</p>
         </div>
-    </div>
-     
-    <!-- -Experience- -->
-    <section class="experience" id="experience">
-        <div class="main-text">
-            <h2>My Experiences</h2>
+        <div class="skill-group">
+          <p class="skill-heading">Statistics</p>
+          <p class="skill-items">Regression · Bayesian inference · A/B testing</p>
         </div>
-        <br>
-        <div class="experience-content">
-            <div class="box">
-                <img src="img/gfg.png" >
-                <h3>GeeksforGeeks</h3>
-                <h4>
-                    <span>
-                        Technical Content Writer
-                    </span>
-                </h4>
-                <br>
-                <p>
-                    • Created Multiple Software Development Projects with their detailed Documentation.
-                    <br>
-                    • Worked with the Dynamic Team of GeeksforGeeks.
-                </p>
-            </div>
+        <div class="skill-group">
+          <p class="skill-heading">Data tools</p>
+          <p class="skill-items">Pandas · NumPy · dbt</p>
         </div>
+        <div class="skill-group">
+          <p class="skill-heading">Visualization</p>
+          <p class="skill-items">Matplotlib · Seaborn · Tableau</p>
+        </div>
+        <div class="skill-group">
+          <p class="skill-heading">Domain</p>
+          <p class="skill-items">Real estate markets · Property valuation</p>
+        </div>
+      </div>
     </section>
 
-    <!-- -Skills- -->
-    <section class="skills" id="skills">
-        <div class="main-text">
-            <h2>My Skills</h2>
-        </div>
-
-        <div class="skills-content">
-            <div class="box">
-                <img src="img/cp-removebg-preview.png" >
-                <h3>Competitive Programming</h3>
-                <p>
-                    Competitive programming is a sport of coding, where individuals engage in solving algorithmic challenges against the clock, showcasing their problem-solving skills and efficiency in crafting elegant and optimized solutions.</p>
-            </div>
-
-            <div class="box">
-                <img src="img/fe-removebg-preview.png" >
-                <h3>Front-end Development</h3>
-                <p>Front-end development is the art of bringing digital creativity to life, focusing on the user interface and user experience to seamlessly merge design with functionality, shaping the visual and interactive elements of websites.</p>
-            </div>
-
-            <div class="box">
-                <img src="img/ml-removebg-preview.png">
-                <h3>Machine Learning</h3>
-                <p>Machine learning is a transformative field at the intersection of computer science and A.I., empowering systems to learn from data, recognize patterns, and make intelligent decisions, entering in a automated insights and problem-solving.</p>
-            </div>
-        </div>
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <span class="section-label">Projects</span>
+      <div class="projects-grid">
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Machine learning</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Housing price prediction</h3>
+          <p class="project-desc">Regression model predicting property values using location, square footage, and local market trend features.</p>
+          <div class="project-stack">Python · scikit-learn · Pandas</div>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Statistics</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Rental market analysis</h3>
+          <p class="project-desc">Exploratory and inferential analysis of rental trends across metro areas using census and MLS data.</p>
+          <div class="project-stack">R · ggplot2 · Census API</div>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Your tag</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Your project title</h3>
+          <p class="project-desc">Describe what the project does, why you built it, and what the outcome was. Keep it to 2–3 sentences.</p>
+          <div class="project-stack">Tools · You · Used</div>
+        </a>
+        <a href="#" class="project-card">
+          <div class="project-top">
+            <span class="project-tag">Your tag</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <h3 class="project-title">Your project title</h3>
+          <p class="project-desc">Describe what the project does, why you built it, and what the outcome was. Keep it to 2–3 sentences.</p>
+          <div class="project-stack">Tools · You · Used</div>
+        </a>
+      </div>
     </section>
 
-    <!-- -Achievements- -->
-    <section class="achievement" id="achievement">
-        <div class="main-text">
-            <h2>My Achievements</h2>
-            <h4>Some of My Major Achievements</h4>
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <span class="section-label">Experience</span>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2024 – present</span>
+          <div class="timeline-body">
+            <h3>Your role</h3>
+            <p class="timeline-org">Company / Organization</p>
+            <p class="timeline-desc">One or two sentences describing your responsibilities and what you built or learned.</p>
+          </div>
         </div>
-
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="img/coding.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Write your Coding achievements here</h6>
-                    </div>
-                </div>
-                <h3>Details about the Achievement </h3>
-            </div>
-            <div class="row">
-                <img src="img/hackathon.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Write your Hackathons achievements here</h6>
-                    </div>
-                </div>
-                <h3>Details about the Hackathon </h3>
-            </div>
-            <div class="row">
-                <img src="img/extras.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Write your Extra curricular achievements here</h6>
-                    </div>
-                </div>
-                <h3>Details about the Achievement </h3>
-            </div>
-            
+        <div class="timeline-item">
+          <span class="timeline-date">2023</span>
+          <div class="timeline-body">
+            <h3>Research assistant</h3>
+            <p class="timeline-org">University Department</p>
+            <p class="timeline-desc">Assisted with data collection and statistical modeling for an ongoing research project.</p>
+          </div>
         </div>
-    </section>
-    
-
-    <!-- -portfolio- -->
-    <section class="portfolio" id="portfolio">
-        <div class="main-text">
-            <h2>My Projects</h2>
-            <h4>Some Of My Distinguished Works</h4>
-        </div>
-
-        <div class="portfolio-content">
-            <div class="row">
-                <a href="https://www.geeksforgeeks.org/library-management-system/" target="_blank">
-                    <img src="img/lib1.jpg">
-                </a>
-                    <div class="main-row">
-                    <div class="row-text">
-                        <h6>Web App development</h6>
-                    </div>
-                </div>
-                <h3>Library Management System</h3>
-            </div>
-
-            <div class="row">
-                <a href="https://www.geeksforgeeks.org/forecast-weather-project-check-today-weather-for-any-location/" target="_blank">
-                    <img src="img/weather.jpg">
-                </a>
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Web App Development</h6>
-                    </div>
-                </div>
-                <h3>Weather Forecasting App</h3>
-            </div>
-            
-            <div class="row">
-                <a href="https://www.geeksforgeeks.org/dog-breed-classification-using-transfer-learning/" target="_blank">
-                    <img src="img/breed.jpg">
-                </a>
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Machine Learning</h6>
-                    </div>
-                </div>
-                <h3>Dog's Breed Classification</h3>
-            </div>
-
-            <div class="row">
-                <a href="https://www.geeksforgeeks.org/ml-boston-housing-kaggle-challenge-with-linear-regression/" target="_blank">
-                    <img src="img/price.jpg">
-                </a>
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Machine Learning</h6>
-                    </div>
-                </div>
-                <h3>Boston House Price Prediction</h3>
-            </div>
-
-        </div>
+      </div>
     </section>
 
-    <!-- -POR- -->
-    <section class="POR" id="POR">
-        <div class="main-text">
-            <h2>Position of Responsibilities</h2>
-            <h4>Some of My valunteer Work</h4>
+    <!-- Achievements -->
+    <section class="section" id="achievements">
+      <span class="section-label">Achievements</span>
+      <div class="ach-grid">
+        <div class="ach-card">
+          <span class="ach-diamond">◆</span>
+          <div>
+            <h4>Achievement title</h4>
+            <p>Dean's list, scholarship, competition win, certification — add details here.</p>
+          </div>
         </div>
-
-        <div class="portfolio-content">
-            <div class="row">
-                <img src="img/speaker.jpg">
-                    <div class="main-row">
-                    <div class="row-text">
-                        <h6>GFG College Chapter</h6>
-                    </div>
-                </div>
-                <h3>President</h3>
-            </div>
-
-            <div class="row">
-                <img src="img/chess.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h6>Chess Coordinator</h6>
-                    </div>
-                </div>
-                <h3>College Chess Club</h3>
-            </div>
+        <div class="ach-card">
+          <span class="ach-diamond">◆</span>
+          <div>
+            <h4>Achievement title</h4>
+            <p>Relevant coursework distinction, published work, or recognition.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- -contact- -->
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact Me</h2>
-            <h4>Let's Work Together</h4>
-            <p>I will Help you in your next Project, Contact me through details given below .</p>
-            <div class="contact-list">
-                <li><a href="#">Local Address</a></li>
-                <li><a href="#">example@gmail.com</a></li>
-                <li><a href="#">+91 0000000000</a></li>
-                <a href="mailto: example@gmail.com">
-                    <button class="btn">
-                        Let's Chat
-                    </button>
-                </a>
-            </div>
-            <div class="contact-icons">
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.geeksforgeeks.org/" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a title="+91 0000000000"><i class='bx bxl-whatsapp' ></i></a>
-
-            </div>
-        </div> 
+    <!-- More About Me -->
+    <section class="section" id="more">
+      <span class="section-label">More about me</span>
+      <div class="more-grid">
+        <div class="more-text">
+          <h2>Life outside the terminal</h2>
+          <p>When I'm not working with data, you'll find me on the pitch playing hurling — a fast-paced Irish sport that's been a big part of my life. It's taught me a lot about teamwork, discipline, and competing under pressure.</p>
+          <p style="margin-top:0.75rem;">I think the same instincts that make a good athlete — reading the game quickly, adapting, staying composed — translate pretty well to data science.</p>
+        </div>
+        <div class="more-photo">
+          <img src="img/hurling.jpeg" alt="Hurling">
+          <p class="img-caption">Hurling — one of the world's oldest field sports</p>
+        </div>
+      </div>
     </section>
 
-    <!---scroll-top--->
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <span class="section-label">Contact</span>
+      <div class="contact-block">
+        <h2>Let's connect</h2>
+        <p>Open to internships, research collaborations, and interesting data problems.</p>
+        <div class="contact-links">
+          <a href="mailto:you@example.com" class="btn btn-primary">Email me</a>
+          <a href="https://linkedin.com/in/yourprofile" class="btn btn-ghost" target="_blank">LinkedIn</a>
+          <a href="https://github.com/nwalsh881" class="btn btn-ghost" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+  </main>
 
-    <!---custom js link--->
-    <script type="text/javascript" src="js/script.js"></script>
+  <footer>
+    <span>nwalsh881 · <span id="year"></span></span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const phrases = ['build predictive models.', 'uncover market trends.', 'answer hard questions.', 'make data readable.'];
+    let pi = 0, ci = 0, deleting = false;
+    const el = document.getElementById('typing');
+    function type() {
+      const phrase = phrases[pi];
+      if (!deleting) {
+        el.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
+      } else {
+        el.textContent = phrase.slice(0, --ci);
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+      }
+      setTimeout(type, deleting ? 40 : 70);
+    }
+    type();
+
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.section').forEach(s => obs.observe(s));
+  </script>
 
 </body>
 </html>
