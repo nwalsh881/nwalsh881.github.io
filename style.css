@@ -327,7 +327,7 @@ main {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 150px 1fr;
   gap: 2rem;
   padding: 1.75rem 0;
   border-bottom: 1px solid var(--border);
@@ -443,3 +443,5 @@ footer {
   .contact-block { padding: 1.5rem; }
   .section-heading { font-size: 24px; }
 }
+
+.section-label { display: none; }
