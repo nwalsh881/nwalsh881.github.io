@@ -322,6 +322,41 @@ main {
 .project-desc { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 1rem; }
 .project-stack { font-family: var(--mono); font-size: 11px; color: var(--hint); }
 
+/* Coursework */
+
+.coursework-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.coursework-group {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.coursework-heading {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--hint);
+  margin-bottom: 0.5rem;
+}
+
+.coursework-group ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.coursework-group li {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 0.15rem;
+}
+
 /* Timeline */
 .timeline { display: flex; flex-direction: column; }
 
@@ -442,6 +477,7 @@ footer {
   .activity-reverse { direction: ltr; }
   .contact-block { padding: 1.5rem; }
   .section-heading { font-size: 24px; }
+  .coursework-list { grid-template-columns: 1fr; }
 }
 
 .section-label { display: none; }
