@@ -331,14 +331,20 @@ main {
   row-gap: 2rem;
 }
 
+.coursework-note {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
 .coursework-group {
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--border);
 }
 
 .coursework-heading {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--hint);
